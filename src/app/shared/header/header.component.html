@@ -63,26 +63,24 @@
                 <form class="space-y-3" action="#">
                     <div>
                         <label for="selectcompany" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Company</label>
-                        <select name="selectcompany" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" >
+                        <!-- <select name="selectcompany" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" >
                             <option value="selected">Select Stock...</option>
-                        </select>
+                        </select> -->
                         <select2
                             [overlay]="overlay"
-                            [data]="data1"
-                            [value]="value1"
-                            (update)="update('value1', $event)"
-                            (change)="change('change1', $event)"
-                            (search)="search('search1')"
+                            [data]="companydata"
+                            [value]="companydata"
+                            (update)="update('companyvalue', $event)"
+                            (change)="change('companychange', $event)"
+                            (search)="search('companysearch')"
+                            multiple= true
                             resettable
-                            id="selec2-1"
+                            id="selectCompany"
                         >
                         </select2>
                     </div>
                     <div>
                         <label for="sharetype" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Share Type</label>
-                        <select name="sharetype" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" >
-                            <option value="selected">Select IPO Type...</option>
-                        </select>
                     </div>
                     <div class="grid grid-cols-2 gap-6">
                         <div>
