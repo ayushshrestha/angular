@@ -8,6 +8,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 import { HighchartsChartModule } from 'highcharts-angular';
+import { Select2Module } from 'ng-select2-component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    Select2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

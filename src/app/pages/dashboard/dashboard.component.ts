@@ -15,12 +15,12 @@ export class DashboardComponent {
  
    chartOptions: Highcharts.Options = {
      title: {
-       text: "Monthly Site Visitor"
+       text: "Nepse"
      },
      xAxis: {
        categories: [
-         "Jan",
-         "Feb",
+         "11:00",
+         "12:00",
          "Mar",
          "Apr",
          "May",
@@ -35,7 +35,7 @@ export class DashboardComponent {
      },
      yAxis: {
        title: {
-         text: "Visitors"
+         text: "Nepse"
        }
      },
      series: [
@@ -52,5 +52,8 @@ export class DashboardComponent {
        }
      ]
    };
+
+
+
    }
 
