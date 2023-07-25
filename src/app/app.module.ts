@@ -9,6 +9,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 import { HighchartsChartModule } from 'highcharts-angular';
 import { Select2Module } from 'ng-select2-component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { Select2Module } from 'ng-select2-component';
     BrowserModule,
     AppRoutingModule,
     HighchartsChartModule,
-    Select2Module
+    Select2Module,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
