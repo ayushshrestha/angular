@@ -12,6 +12,7 @@ import { Select2Module } from 'ng-select2-component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {CdkMenuModule} from '@angular/cdk/menu';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     Select2Module,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    CdkMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
