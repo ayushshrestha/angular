@@ -16,6 +16,7 @@ export class HeaderComponent {
             { value: 'HI', label: 'Hawaii'},
             { value: 'CA', label: 'California' },
             { value: 'NV', label: 'Nevada' },
+
         ],
     },
 ];
