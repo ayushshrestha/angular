@@ -33,7 +33,7 @@
 
 
 <!-- Main modal -->
-<div class="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div class="relative z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <!--
         Background backdrop, show/hide based on modal state.
 
@@ -72,15 +72,12 @@
                             (change)="change('change1', $event)"
                             (search)="search('search1')"
                             resettable
-                            id="selec2-1"
+                            id="selectCompany"
                         >
                         </select2>
                     </div>
                     <div>
                         <label for="sharetype" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Share Type</label>
-                        <select name="sharetype" id="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" >
-                            <option value="selected">Select IPO Type...</option>
-                        </select>
                     </div>
                     <div class="grid grid-cols-2 gap-6">
                         <div>

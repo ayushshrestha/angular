@@ -7,13 +7,16 @@ import { Select2Option, Select2UpdateEvent } from 'ng-select2-component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  title = 'angulardemos';
+  title = 'PMS';
   overlay = false;
-  data1:any= [
+  companydata:any= [
     {
         options: [
             { value: 'AK', label: 'Alaska' },
             { value: 'HI', label: 'Hawaii'},
+            { value: 'CA', label: 'California' },
+            { value: 'NV', label: 'Nevada' },
+
         ],
     },
 ];
@@ -21,14 +24,14 @@ change(key: string, event: Event) {
   console.log(key, event);
 }
 search(text: string) {
-  this.data1 = text
-      ? (JSON.parse(JSON.stringify(this.data1)) as Select2Option[]).filter(
+  this.companydata = text
+      ? (JSON.parse(JSON.stringify(this.companydata)) as Select2Option[]).filter(
             option => option.label.toLowerCase().indexOf(text.toLowerCase()) > -1,
         )
-      : JSON.parse(JSON.stringify(this.data1));
+      : JSON.parse(JSON.stringify(this.companydata));
 }
 update(key: string, event: Select2UpdateEvent<any>) {
   console.log(event.value);
 }
-value1 = 'CA';
+companyvalue = 'CA';
 }

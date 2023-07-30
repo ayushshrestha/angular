@@ -19,6 +19,11 @@ import { LoginComponent } from './pages/login/login.component';
 import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {CdkMenuModule} from '@angular/cdk/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,10 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     HighchartsChartModule,
-    Select2Module
+    Select2Module,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    CdkMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
